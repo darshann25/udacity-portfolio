@@ -1,0 +1,258 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 120%;
+}
+
+#workExperience,
+#projects,
+#education{
+  padding: 1% 0 2.5% 0;
+}
+
+
+h1 {
+  font-size: 250%;
+  color: #ff9800;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  color: #999;
+  line-height: 29px;
+  padding: 10px;
+  text-align: center;
+  font-size: 200%;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  padding:10px 5%;
+
+}
+
+
+.date-text {
+  font-style: italic;
+  color: #999;
+  line-height: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70%;
+  text-align: center;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: center-content;
+
+}
+
+p {
+
+  color: #333;
+  padding: 0 5%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 90%;
+}
+
+a {
+  color: #0288D1;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-size: 160%;
+  float:left;
+  color: #f3f3f3;
+  line-height: 28px;
+}
+
+#skills-h3 {
+  color: #ff9800;
+  float: inherit;
+}
+
+.orange {
+  background-color: #ff9800;
+}
+
+.orange-text {
+  color: #ff9800;
+  font-size: 140%;
+  font-family: "Roboto", sans-serif;
+}
+
+.white-text {
+  padding: 0 2%;
+  color: #fff;
+  font-size: 140%;
+}
+
+.gray {
+  background-color: #f3f3f3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #4a4a4a;
+}
+
+/* TODO: Replace with image later */
+#header {
+  background-color: #484848;
+  text-align: center;
+
+}  
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+.project-experience,
+.work-experience {
+  list-style-type: none;
+  display: list-item;
+  text-align: center;
+  padding: 0.5% 0 0.5% 0;
+}
+
+.flex-item {
+  list-style-type: none;
+  display: inline;
+}
+
+.biopic {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+img {
+  padding: 10px;
+  width : 30%;
+  height: 45%;
+}
+
+.school-img{
+  width : 20%;
+  height : 20%;
+
+}
+
+em{
+  padding: 0px;
+}
+
+span {
+  padding: 5px;
+  font-family: 'Bellefair';
+}
+
+#permanent-header {
+  text-align: center;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+/* @media only screen and (max-width:1475px) {
+  .biopic {
+    width: 50%;
+    float: inherit;
+  } */
+
+  .welcome-message {
+    display: none;
+  }
+
+  #skills-h3{
+    float: none;
+  }
+}
+
+
+#mapDiv {
+  padding: 1% 0 2.5% 0;
+  height: 800px;
+  width: 100%;
+
+}
+
+#mapHolder {
+  height: 100%;
+  width: 100%;
+
+}
