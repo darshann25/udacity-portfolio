@@ -17,7 +17,6 @@ var bio = {
     "linkedin": 'darshannpatel',
     "twitter": 'darshann94',
     "facebook": 'darshanpatel94',
-    "location": "Philadelphia, PA"
     },
   "imageURL" : "images/me1.JPG",
   "welcomeMSG" : "Life is writing, reading, and coding. The rest is just waiting. :)",
