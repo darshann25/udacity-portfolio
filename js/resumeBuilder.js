@@ -3,7 +3,7 @@ var myName = "Darshan Patel";
 var myRole = "Full Stack Engineer";
 
 var skills = ["java", "javaScript", "android", "c++", "assembly", "css", "html"];
-var interests = ["photography", "running", "tennis", "reading short-stories"]
+var interests = ["skydiving", "photography", "running", "reading"]
 
 var bio = {
   "name" : myName,
@@ -16,6 +16,7 @@ var bio = {
     "github": 'darshann25',
     "linkedin": 'darshannpatel',
     "twitter": 'darshann94',
+    "facebook": 'darshanpatel94',
     "location": "Philadelphia, PA"
     },
   "imageURL" : "images/me1.JPG",
@@ -88,10 +89,44 @@ bio.display = function() {
   //$('#header').append(formattedRole);
 
   $('#header').append(HTMLcontactStart);
-  for(var i in bio.contacts){
-      var formattedContact = HTMLcontactGeneric.replace("%contact%", i);
-      formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
-      $('#topContacts').append(formattedContact);
+  // for(var i in bio.contacts){
+  //     var formattedContact = HTMLcontactGeneric.replace("%contact%", i);
+  //     formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+  //     $('#topContacts').append(formattedContact);
+  // }
+
+  for(var i in bio.contacts) {
+    switch(i){
+      case "github" :
+        var formattedContact = HTMLgithub.replace("%contact%", i);
+        formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+        $('#topContacts').append(formattedContact);
+        break;
+
+      case "twitter" :
+        var formattedContact = HTMLtwitter.replace("%contact%", i);
+        formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+        $('#topContacts').append(formattedContact);
+        break;
+
+      case "linkedin" :
+        var formattedContact = HTMLlinkedin.replace("%contact%", i);
+        formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+        $('#topContacts').append(formattedContact);
+        break;
+
+      case "facebook" :
+        var formattedContact = HTMLfacebook.replace("%contact%", i);
+        formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+        $('#topContacts').append(formattedContact);
+        break;
+      
+      default :
+        var formattedContact = HTMLcontactGeneric.replace("%contact%", i);
+        formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
+        $('#topContacts').append(formattedContact);
+        break;
+    }
   }
 
   var formattedImage = HTMLbioPic.replace("%data%", bio.imageURL);
