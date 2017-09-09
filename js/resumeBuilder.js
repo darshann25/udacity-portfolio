@@ -1,8 +1,8 @@
 var myName = "Darshan Patel";
 
-var myRole = "Full Stack Engineer";
+var myRole = "Software Engineer";
 
-var skills = ["java", "javaScript", "android", "c++", "assembly", "css", "html"];
+var skills = ["java", "python", "javaScript", "android", "c++", "assembly", "css", "html"];
 var interests = ["skydiving", "photography", "running", "reading"]
 
 var bio = {
@@ -119,7 +119,7 @@ bio.display = function() {
         formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
         $('#topContacts').append(formattedContact);
         break;
-      
+
       default :
         var formattedContact = HTMLcontactGeneric.replace("%contact%", i);
         formattedContact = formattedContact.replace("%data%", bio.contacts[i]);
