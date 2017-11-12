@@ -1,13 +1,13 @@
 var myName = "Darshan Patel";
 
-var myRole = "Software Engineer";
+var myRole = "Software Developer";
 
 var skills = ["java", "python", "javaScript", "android", "c++", "assembly", "css", "html"];
 var interests = ["skydiving", "photography", "running", "reading"]
 
 var bio = {
   "name" : myName,
-  "age" : 22,
+  "age" : 23,
   "role" : myRole,
   "contacts" :
     {
